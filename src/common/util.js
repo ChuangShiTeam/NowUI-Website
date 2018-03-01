@@ -8,27 +8,31 @@ var PAGE_PATH = path.resolve(__dirname, '../view');
 var merge = require('webpack-merge');
 
 exports.entries = function () {
-  var entryFiles = glob.sync(PAGE_PATH + '/*/*.js');
-  var map = {};
+  var entryFiles = glob.sync(PAGE_PATH + '/*/*.js')
+  var map = {}
   entryFiles.forEach((filePath) => {
-    var filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'));
-    map[filename] = filePath;
-  });
+    var filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
+    filename = filePath.replace(PAGE_PATH + '/', '').replace('js', 'html');
+    map[filename] = filePath
+  })
+  // console.log('----------');
+  // console.log(map);
+  // console.log('----------');
   return map;
 }
 
 exports.htmlPlugin = function () {
-  let entryHtml = glob.sync(PAGE_PATH + '/*.html');
-  entryHtml = entryHtml.concat(glob.sync(PAGE_PATH + '/*/*.html'));
-  console.log(entryHtml)
-  let arr = [];
+  let entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
+  console.log(PAGE_PATH)
+  let arr = []
   entryHtml.forEach((filePath) => {
-    let filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'));
+    let filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
+    filename = filePath.replace(PAGE_PATH + '/', '');
     let conf = {
       // 模板来源
-      template: filePath,
+      template: PAGE_PATH.replace('src/view', 'web/index.html'),
       // 文件名称
-      filename: filePath.replace(PAGE_PATH + '/', ''),
+      filename: filename,
       // 页面模板需要加对应的js脚本，如果不加这行则每个页面都会引入所有的js脚本
       chunks: ['manifest', 'vendor', filename],
       inject: true
@@ -41,9 +45,12 @@ exports.htmlPlugin = function () {
           removeAttributeQuotes: true
         },
         chunksSortMode: 'dependency'
-      });
+      })
     }
-    arr.push(new HtmlWebpackPlugin(conf));
-  });
+    arr.push(new HtmlWebpackPlugin(conf))
+  })
+  // console.log('+++++++++++');
+  // console.log(arr);
+  // console.log('+++++++++++');
   return arr;
 }
