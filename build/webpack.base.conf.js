@@ -70,7 +70,7 @@ const getEntryFile = (dir) => {
         }
       }
     }
-    else if (stat.isDirectory() && file !== 'build' && file !== 'include') {
+    else if (stat.isDirectory() && file !== 'build' && file !== 'include') {``
       const subdir = path.join(dir, file);
       getEntryFile(subdir);
     }

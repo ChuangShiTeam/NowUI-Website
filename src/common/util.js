@@ -22,8 +22,8 @@ exports.entries = function () {
 }
 
 exports.htmlPlugin = function () {
-  let entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
-  console.log(PAGE_PATH)
+  let entryHtml = glob.sync(PAGE_PATH + '/*.html');
+  entryHtml = entryHtml.concat(glob.sync(PAGE_PATH + '/*/*.html'));
   let arr = []
   entryHtml.forEach((filePath) => {
     let filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
