@@ -13,7 +13,7 @@ function resolve(dir) {
 }
 
 const constant = require('../src/common/constant');
-const util = require('../src/common/util');
+const util = require('./util');
 
 // Wraping the entry file for web.
 const getEntryFileContent = (entryPath, vueFilePath) => {
@@ -78,7 +78,7 @@ const getEntryFile = (dir) => {
 }
 
 getEntryFile();
-// console.log(webEntry);
+console.log(webEntry);
 
 module.exports = {
   context: path.resolve(__dirname, '../'),

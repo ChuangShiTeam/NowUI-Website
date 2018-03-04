@@ -3,7 +3,7 @@ var glob = require('glob');
 // 页面模板
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 // 取得相应的页面路径，因为之前的配置，所以是src文件夹下的view文件夹
-var PAGE_PATH = path.resolve(__dirname, '../view');
+var PAGE_PATH = path.resolve(__dirname, '../src/view');
 // 用于做相应的merge处理
 var merge = require('webpack-merge');
 
@@ -24,7 +24,7 @@ exports.entries = function () {
 exports.htmlPlugin = function () {
   let entryHtml = glob.sync(PAGE_PATH + '/*.html');
   entryHtml = entryHtml.concat(glob.sync(PAGE_PATH + '/*/*.html'));
-  let arr = []
+  let arr = [];
   entryHtml.forEach((filePath) => {
     let filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
     filename = filePath.replace(PAGE_PATH + '/', '');
@@ -49,8 +49,8 @@ exports.htmlPlugin = function () {
     }
     arr.push(new HtmlWebpackPlugin(conf))
   })
-  // console.log('+++++++++++');
-  // console.log(arr);
-  // console.log('+++++++++++');
+  console.log('+++++++++++');
+  console.log(arr);
+  console.log('+++++++++++');
   return arr;
 }
