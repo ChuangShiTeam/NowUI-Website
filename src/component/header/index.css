@@ -33,6 +33,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: #FF6000;
+  cursor: pointer;
 }
 
 .content-search-input {
@@ -62,16 +63,17 @@
 .menu-content-home {
   width: 267px;
   height: 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
 }
 
 .menu-content-home-active {
   width: 267px;
   height: 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   line-height: 40px;
@@ -82,13 +84,15 @@
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #ffffff;
+  cursor: pointer;
 }
 
 .menu-content-item {
   width: 100px;
   height: 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
 }

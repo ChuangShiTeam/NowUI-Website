@@ -12,3 +12,87 @@
   opacity: 0.8;
   background-color: #000000;
 }
+
+.super {
+  margin-top: 20px;
+}
+
+.super-item {
+  width: 387px;
+}
+
+.super-item-2 {
+  width: 590px;
+}
+
+.new {
+  margin-top: 20px;
+}
+
+.new-item {
+  width: 288px;
+}
+
+.new-title {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #636363;
+  text-align: center;
+}
+
+.new-item-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #636363;
+}
+
+.new-item-price {
+  font-size: 20px;
+  color: #FF6402;
+}
+
+.hot {
+  margin-top: 20px;
+}
+
+.hot-title {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #636363;
+  text-align: center;
+}
+
+.hot-item {
+  width: 288px;
+}
+
+.hot-item-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #636363;
+}
+
+.hot-item-price {
+  font-size: 20px;
+  color: #FF6402;
+}
+
+.design {
+  margin-top: 20px;
+}
+
+.design-item {
+  width: 387px;
+}
+
+.design-item-2 {
+  width: 387px;
+  margin-top: 20px;
+}
+
+.design-title {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #636363;
+  text-align: center;
+}

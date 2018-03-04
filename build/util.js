@@ -49,8 +49,8 @@ exports.htmlPlugin = function () {
     }
     arr.push(new HtmlWebpackPlugin(conf))
   })
-  console.log('+++++++++++');
-  console.log(arr);
-  console.log('+++++++++++');
+  // console.log('+++++++++++');
+  // console.log(arr);
+  // console.log('+++++++++++');
   return arr;
 }

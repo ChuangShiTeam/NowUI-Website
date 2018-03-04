@@ -3,15 +3,17 @@
 
 <script>
   import bCarousel from 'bootstrap-vue/es/components/carousel/carousel';
-  import bButton from 'bootstrap-vue/es/components/button/button';
+  import bImg from 'bootstrap-vue/es/components/image/img';
 
   import Header from '../component/header/index';
+  import Footer from '../component/footer/index';
 
   export default {
     components: {
       bCarousel,
-      bButton,
-      Header
+      bImg,
+      Header,
+      Footer
     },
     mixins: [],
     data: () => ({}),
