@@ -78,7 +78,7 @@ const getEntryFile = (dir) => {
 }
 
 getEntryFile();
-console.log(webEntry);
+// console.log(webEntry);
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
