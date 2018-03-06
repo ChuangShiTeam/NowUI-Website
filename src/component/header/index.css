@@ -52,6 +52,7 @@
 
 .menu {
   width: 100%;
+  min-width: 1200px;
   height: 40px;
   background-color: #FF6402;
 }
