@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 36px;
+  height: 40px;
   background-color: #F8F8F8;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .header-content-welcome {
-  font-size: 12px;
+  font-size: 14px;
   color: #636363;
 }
 
@@ -19,6 +19,7 @@
 }
 
 .header-content-navigation-text {
+  color: #636363;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -30,9 +31,7 @@
 .content-search {
   width: 520px;
   height: 36px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #FF6000;
+  border: 2px solid #FF6000;
   cursor: pointer;
 }
 
@@ -79,12 +78,8 @@
   text-align: center;
   line-height: 40px;
   background-color: #F44B00;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: #ffffff;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
   cursor: pointer;
 }
 
@@ -95,5 +90,18 @@
   color: #FFFFFF;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
+}
+
+.menu-content-item-active {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 40px;
+  background-color: #F44B00;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
   cursor: pointer;
 }

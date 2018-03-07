@@ -1,10 +1,10 @@
 <div>
   <div class="header">
     <div class="header-content container d-flex justify-content-between align-items-center">
-      <a href="" class="header-content-welcome">欢迎来趣找款</a>
+      <a href="/index.html" class="header-content-welcome">欢迎来趣找款</a>
       <div class="header-content-navigation">
         <a class="header-content-navigation-text"
-           href="">我的趣找款</a>
+           href="/login/index.html">我的趣找款</a>
         |
         <a class="header-content-navigation-text"
            href="">进货车</a>
@@ -32,12 +32,12 @@
   </div>
   <div class="menu">
     <div class="menu-content container d-flex">
-      <div class="menu-content-home-active">首页</div>
-      <div class="menu-content-item">找新款</div>
-      <div class="menu-content-item">找爆款</div>
-      <div class="menu-content-item">趣搭配</div>
-      <div class="menu-content-item">找代工</div>
-      <div class="menu-content-item">要政策</div>
+      <a :class="index == 0 ? 'menu-content-home-active' : 'menu-content-home'" href="/index.html">首页</a>
+      <a :class="index == 1 ? 'menu-content-item-active' : 'menu-content-item'" href="/product/list.html">找新款</a>
+      <a class="menu-content-item" href="/product/list.html">找爆款</a>
+      <a class="menu-content-item" href="/product/list.html">趣搭配</a>
+      <a class="menu-content-item" href="/product/list.html">找代工</a>
+      <a class="menu-content-item" href="/product/list.html">要政策</a>
     </div>
   </div>
 </div>

@@ -1,0 +1,35 @@
+<div>
+  <!-- 头部 -->
+  <Header :index="-1"></Header>
+  <!-- 内容 -->
+  <div class="content container d-flex justify-content-between">
+    <div class="login">
+      <div class="login-title">会员登录</div>
+      <div class="login-description">如果您已经是本站会员，请直接登录。</div>
+      <b-form-group
+        id="fieldset1"
+        label="登录账号"
+        label-for="input1">
+        <b-form-input id="input1"
+                      placeholder="手机号码"></b-form-input>
+      </b-form-group>
+      <b-form-group
+        id="fieldset1"
+        label="密码"
+        label-for="input1">
+        <b-form-input id="input1"
+                      placeholder="密码"></b-form-input>
+      </b-form-group>
+      <div class="login-submit">登录</div>
+    </div>
+    <div class="register">
+      <div class="register-title">新会员注册</div>
+      <div class="register-description">现在注册以便您能更快速的购物、查看订单状态和订购记录并享受您的会员专属权益。</div>
+      <a href="/login/register.html">
+        <div class="register-submit">立即注册</div>
+      </a>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <Footer></Footer>
+</div>

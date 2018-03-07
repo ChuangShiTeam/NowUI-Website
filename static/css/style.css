@@ -25,7 +25,6 @@ em {
 
 a {
   text-decoration: none;
-  color: #333;
   outline: none;
 }
 
@@ -39,4 +38,18 @@ a:hover {
   max-width: none !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+* {
+  font-size: 14px;
 }

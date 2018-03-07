@@ -2,15 +2,16 @@
 <template src="./index.html"></template>
 
 <script>
+  import bImg from 'bootstrap-vue/es/components/image/img';
+
+  import Header from '../../component/header/index';
+  import Footer from '../../component/footer/index';
+
   export default {
     components: {
-
-    },
-    props: {
-      index: {
-        type: Number,
-        required: true
-      }
+      bImg,
+      Header,
+      Footer
     },
     mixins: [],
     data: () => ({
