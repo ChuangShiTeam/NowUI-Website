@@ -1,3 +1,3 @@
 module.exports = {
-    active: 'dev'
+    active: 'prod'
 };
