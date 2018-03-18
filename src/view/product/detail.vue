@@ -6,6 +6,8 @@
   import bListGroup from 'bootstrap-vue/es/components/list-group/list-group';
   import bImg from 'bootstrap-vue/es/components/image/img';
 
+  import mixins from '../../mixins/index';
+
   import Header from '../../component/header/index';
   import Footer from '../../component/footer/index';
 
@@ -17,7 +19,7 @@
       Header,
       Footer
     },
-    mixins: [],
+    mixins: [mixins],
     data: () => ({
 
     }),
