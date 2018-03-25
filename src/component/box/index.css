@@ -1,0 +1,17 @@
+.detail-content {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.detail-body {
+  width: 100%;
+  height: calc(100vh - 56px);
+  padding: 0 0 5px 20px;
+}
+.detail-inset {
+  border-left: 2px solid #cdcdd0;
+  border-bottom: 2px solid #cdcdd0;
+  height: calc(100vh - 63px);
+  background-image: url('../../assets/img/detail-bg.png');
+  background-size: 100% 100%;
+}

@@ -3,15 +3,18 @@
 
 <script>
   import bImg from 'bootstrap-vue/es/components/image/img';
+  import bFooter from '@/component/footer/index.vue'
+
+  import mixins from '../../mixins/index';
+
   export default {
     components: {
-      bImg
+      bImg,
+      bFooter
     },
-    mixins: [],
+    mixins: [mixins],
     data () {
-      return {
-        btm: require('@/assets/img/bottom-img.png')
-      }
+      return {}
     },
     created() {
 

@@ -3,15 +3,18 @@
 
 <script>
   import bImg from 'bootstrap-vue/es/components/image/img';
+  import box from '@/component/box/index.vue'
+
+  import mixins from '../../mixins/index';
+
   export default {
     components: {
-      bImg
+      bImg,
+      box
     },
-    mixins: [],
+    mixins: [mixins],
     data () {
-      return {
-        btm: require('@/assets/img/bottom-img.png')
-      }
+      return {}
     },
     created() {
 

@@ -3,22 +3,19 @@
 
 <script>
   import bImg from 'bootstrap-vue/es/components/image/img';
+  import bFooter from '@/component/footer/index.vue'
 
   import mixins from '../../mixins/index';
-
-  import Header from '../../component/header/index';
-  import Footer from '../../component/footer/index';
 
   export default {
     components: {
       bImg,
-      Header,
-      Footer
+      bFooter
     },
     mixins: [mixins],
-    data: () => ({
-
-    }),
+    data () {
+      return {}
+    },
     created() {
 
     },
